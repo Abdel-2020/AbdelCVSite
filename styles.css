@@ -7,6 +7,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body{
@@ -16,6 +17,17 @@ body{
     color: rgba(255,255,255,.99);
 }
 
+nav > ul{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    position: fixed;
+    top:30px;
+    right: 30px;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
 h1{
     font-size: 4rem;
     font-weight: 700;
@@ -23,10 +35,11 @@ h1{
 
 h2{
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 p{
+    font-weight: 200;
     font-size: 1rem;
 }
 
@@ -48,7 +61,8 @@ section{
     width: 100vw;
     height:90vh;
     object-fit: cover;
-    opacity: 0.3;
+    object-position: -15px;
+    opacity: 0.2;
 }
 
 
