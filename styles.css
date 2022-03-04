@@ -54,10 +54,13 @@ main {
     justify-content: space-between;
 }
 
-section{
+section {
     padding: 20px;
 }
 
+.hero-section {
+    text-align: center;
+}
 
 
 .hero-img {
@@ -67,11 +70,14 @@ section{
     width: 100%;
     height: 95vh;
     object-fit: cover;
-
-    opacity: 0.2;
+    opacity: 0.4;
 }
 
 /*Projects Styling*/
+
+.projects-section {
+    margin-top: 60vh;
+}
 
 .projects-container {
     display: flex;
@@ -79,9 +85,9 @@ section{
     justify-content: space-between;
 }
 
-.projects-img{
+.projects-img {
     cursor: pointer;
     height: 200px;
-    width:360px;
-    
+    width: 360px;
+
 }
