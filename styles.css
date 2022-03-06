@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
 }
 
 /*General Styling*/
@@ -44,18 +45,27 @@ p {
     font-size: 1rem;
 }
 
+a{
+    color: rgba(255, 255, 255, .75);
+}
+
+a:hover{
+    color: rgba(0, 0, 0, 0.99);
+}
+
 main {
     width: 60vw;
+    min-height: 60vh;
     margin: 20vh auto 0;
     display: flex;
     flex-direction: column;
-    min-height: 60vh;
     align-items: center;
     justify-content: space-between;
 }
 
 section {
     padding: 20px;
+
 }
 
 .hero-section {
@@ -65,29 +75,48 @@ section {
 
 .hero-img {
     position: absolute;
+    left:0;
     top: 0;
     z-index: -1;
     width: 100%;
     height: 95vh;
     object-fit: cover;
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 /*Projects Styling*/
 
 .projects-section {
     margin-top: 60vh;
+   text-align: center;
 }
 
 .projects-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    display:flex;
+    flex-basis:25%;
+}  
 
 .projects-img {
     cursor: pointer;
-    height: 200px;
-    width: 360px;
+    height: 240px;
+    width:400px;
 
+}
+
+.contact-me-section{
+    width:100%;
+    text-align: center;
+}
+
+.socials{
+    display:flex;
+    justify-content: space-around;
+    font-size: 4rem;
+    color:#131213;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.socials:hover{
+    color: rgba(255, 255, 255, .75);
 }
