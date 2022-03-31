@@ -140,6 +140,10 @@ section {
 /*End of burger menu*/
 
 
+
+/*Hero Section*/
+
+
 .hero-section {
     text-align: center;
 }
@@ -155,6 +159,10 @@ section {
     object-fit: cover;
     opacity: 0.3;
 
+}
+
+.hero-title{
+margin-top: 30vh;
 }
 
 /*Projects Styling*/
