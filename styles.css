@@ -17,9 +17,10 @@ body {
     font-family: "Manrope", sans-serif;
     background-color: rgba(0, 0, 0, .99);
     color: rgba(255, 255, 255, .99);
+    overflow-x: hidden;
 }
 
-.navbar{
+.navbar {
     display: none;
     position: fixed;
     flex-direction: column;
@@ -32,7 +33,7 @@ body {
     transition: all 5s ease-in-out;
 }
 
-.navbar.pressed{
+.navbar.pressed {
     display: flex;
     right: 60px;
 }
@@ -73,51 +74,47 @@ a:hover {
 }
 
 main {
-    width: 80vw;
-    min-height: 60vh;
-    margin: 20vh auto 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
 section {
     padding: 20px;
-
+    height: 100vh;
+    margin-bottom: 50px;
 }
-
 
 /*burger menu*/
 
 
-.menu-button-burger{
-    position:fixed;
-    top:40px;
+.menu-button-burger {
+    position: fixed;
+    top: 40px;
     right: 40px;
-    width:50px;
-    height:6px;
+    width: 50px;
+    height: 6px;
     background-color: rgba(255, 255, 255, .75);
     border-radius: 5px;
     transition: all .5s ease-in-out;
 }
 
 
-.menu-button-burger::before, .menu-button-burger::after{
+.menu-button-burger::before,
+.menu-button-burger::after {
     content: '';
     position: absolute;
-    width:50px;
-    height:6px;
+    width: 50px;
+    height: 6px;
     background-color: rgba(255, 255, 255, .75);
     border-radius: 5px;
     transition: all .5s ease-in-out;
 }
 
-.menu-button-burger::before{
+.menu-button-burger::before {
     transform: translateY(-16px);
 }
 
-.menu-button-burger::after{
+.menu-button-burger::after {
     transform: translateY(16px);
 }
 
@@ -129,14 +126,14 @@ section {
     background: transparent;
 }
 
-.menu-button.open .menu-button-burger::before{
-    transform: rotate(45deg)  translate(-35px, 35px);
+.menu-button.open .menu-button-burger::before {
+    transform: rotate(45deg) translate(-35px, 35px);
 
 }
 
 
-.menu-button.open .menu-button-burger::after{
-      transform: rotate(-45deg) translate(-35px, -35px);
+.menu-button.open .menu-button-burger::after {
+    transform: rotate(-45deg) translate(-35px, -35px);
 }
 
 
@@ -153,16 +150,17 @@ section {
     left: 0;
     top: 0;
     z-index: -1;
-    width: 100%;
-    height: 95vh;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     opacity: 0.3;
+
 }
 
 /*Projects Styling*/
 
 .projects-section {
-    margin-top: 60vh;
+
     text-align: center;
 }
 
@@ -201,7 +199,9 @@ section {
 
 .contact-me-section {
     width: 100%;
-    text-align: centerS;
+    text-align: center;
+    height: 50vh;
+
 }
 
 .socials {
