@@ -20,32 +20,34 @@ body {
 }
 
 nav>ul {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
     position: fixed;
-    top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    top: 100px;
     right: 30px;
     font-size: 1.2rem;
     font-weight: 200;
+    display: none;
 }
 
-li{
+li {
     line-height: 2em;
 }
 
 h1 {
     font-size: 4rem;
     font-weight: 700;
+    text-align: center;
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 500;
-   
+
 }
 
-h3{
+h3 {
     font-weight: lighter;
     margin: 10px;
 }
@@ -55,12 +57,13 @@ p {
     font-size: 1rem;
 }
 
-a{
+a {
     color: rgba(255, 255, 255, .75);
 }
 
-a:hover{
-    color: rgba(0, 0, 0, 0.99);
+a:hover {
+    color: rgba(255, 255, 255, .50);
+
 }
 
 main {
@@ -78,6 +81,62 @@ section {
 
 }
 
+
+/*burger menu*/
+
+
+.menu-button-burger{
+    position:fixed;
+    top:40px;
+    right: 40px;
+    width:50px;
+    height:6px;
+    background-color: rgba(255, 255, 255, .75);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+
+.menu-button-burger::before, .menu-button-burger::after{
+    content: '';
+    position: absolute;
+    width:50px;
+    height:6px;
+    background-color: rgba(255, 255, 255, .75);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-button-burger::before{
+    transform: translateY(-16px);
+}
+
+.menu-button-burger::after{
+    transform: translateY(16px);
+}
+
+
+/*Animation*/
+
+.menu-button.open .menu-button-burger {
+    transform: translateX(50px);
+    background: transparent;
+}
+
+.menu-button.open .menu-button-burger::before{
+    transform: rotate(45deg)  translate(-35px, 35px);
+
+}
+
+
+.menu-button.open .menu-button-burger::after{
+      transform: rotate(-45deg) translate(-35px, -35px);
+}
+
+
+/*End of burger menu*/
+
+
 .hero-section {
     text-align: center;
 }
@@ -85,7 +144,7 @@ section {
 
 .hero-img {
     position: absolute;
-    left:0;
+    left: 0;
     top: 0;
     z-index: -1;
     width: 100%;
@@ -98,46 +157,56 @@ section {
 
 .projects-section {
     margin-top: 60vh;
-   text-align: center;
+    text-align: center;
 }
 
 .projects-container {
-    display:flex;
-    flex-basis:25%;
-}  
+    display: flex;
+}
 
 
-.projects-subtitle{
+.projects-subtitle {
     padding: 10px;
 }
 
 .projects-img {
     cursor: pointer;
     height: 240px;
-    width:400px;
+    width: 400px;
+    border-radius: 20px;
 
 }
 
 
 /*Education Styling*/
-.education-section{
-width: 100%;
+.education-section {
+    width: 100%;
 }
 
-.contact-me-section{
-    width:100%;
+.key-skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    font-size: 4rem;
+    width: 40vw;
+}
+
+
+.contact-me-section {
+    width: 100%;
     text-align: centerS;
 }
 
-.socials{
-    display:flex;
+.socials {
+    display: flex;
     justify-content: space-around;
     font-size: 4rem;
-    color:#131213;
+    color: #131213;
     transition: all 0.5s ease;
     cursor: pointer;
 }
 
-.socials:hover{
+.socials:hover {
     color: rgba(255, 255, 255, .75);
 }
