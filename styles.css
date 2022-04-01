@@ -20,24 +20,6 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
-    display: none;
-    position: fixed;
-    flex-direction: column;
-    width: 120px;
-    top: 100px;
-    right: -100px;
-    text-align: right;
-    font-size: 1.2rem;
-    font-weight: 200;
-    transition: all 5s ease-in-out;
-}
-
-.navbar.pressed {
-    display: flex;
-    right: 60px;
-}
-
 li {
     line-height: 2em;
 }
@@ -80,7 +62,7 @@ main {
 
 section {
     padding: 20px;
-    height: 100vh;
+    height: 95vh;
     margin-bottom: 50px;
 }
 
@@ -137,6 +119,24 @@ section {
 }
 
 
+.navbar {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    width: 120px;
+    top: 100px;
+    right: -100px;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 200;
+    transition: all 5s ease-in-out;
+}
+
+.navbar.pressed {
+    display: flex;
+    right: 60px;
+}
+
 /*End of burger menu*/
 
 
@@ -155,7 +155,7 @@ section {
     top: 0;
     z-index: -1;
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     object-fit: cover;
     opacity: 0.3;
 
@@ -163,6 +163,10 @@ section {
 
 .hero-title{
 margin-top: 30vh;
+}
+
+.hero-subtitle{
+    font-weight:  lighter;
 }
 
 /*Projects Styling*/
@@ -195,6 +199,11 @@ margin-top: 30vh;
     width: 100%;
 }
 
+.vs-logo{
+    height: 1em;
+    width: auto;
+}
+
 .key-skills-container {
     display: flex;
     justify-content: space-around;
@@ -204,6 +213,7 @@ margin-top: 30vh;
     width: 40vw;
 }
 
+/*Contact Styling*/
 
 .contact-me-section {
     width: 100%;
