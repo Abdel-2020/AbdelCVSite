@@ -228,34 +228,41 @@ section {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
-
-    cursor: pointer;
-
 }
 
 .fa-html5 {
     color: #e34c26;
+    cursor: pointer;
 }
 
 .fa-css3-alt {
     color: #264de4;
+    cursor: pointer;
 }
 
 .fa-js {
     color: #F0DB4F;
+    cursor: pointer;
 }
 
 .fa-fedora {
     color: #0B57A4;
+    cursor: pointer;
 }
 
 .fa-microsoft {
     color: #00adef;
+    cursor: pointer;
+}
+
+.fa-apple{
+    cursor: pointer;
 }
 
 .vs-logo {
     height: 4em;
     width: auto;
+    cursor: pointer;
 }
 
 .key-skills-lower {
@@ -272,10 +279,6 @@ section {
 .education-article {
     margin-top: 200px;
 }
-
-
-
-.education-article-title {}
 
 /*Contact Styling*/
 
