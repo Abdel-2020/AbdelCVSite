@@ -56,6 +56,10 @@ a:hover {
 
 }
 
+i {
+    font-size: 4rem;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -163,12 +167,12 @@ section {
 
 }
 
-.hero-title{
-margin-top: 30vh;
+.hero-title {
+    margin-top: 30vh;
 }
 
-.hero-subtitle{
-    font-weight:  lighter;
+.hero-subtitle {
+    font-weight: lighter;
 }
 
 
@@ -178,10 +182,13 @@ margin-top: 30vh;
 /*Projects Styling*/
 
 .projects-section {
-    
     text-align: center;
+    height: 60vh;
 }
-.projects-subtitle,  .container-title{
+
+
+.projects-subtitle,
+.container-title {
     text-align: center;
 }
 
@@ -194,7 +201,7 @@ margin-top: 30vh;
 
 
 
-.container-item{
+.container-item {
     padding: 10px;
     text-align: justify;
 }
@@ -212,7 +219,7 @@ margin-top: 30vh;
 
 /*Education Styling*/
 
-.key-skills-title{
+.key-skills-title {
     margin-bottom: 100px;
 }
 
@@ -221,54 +228,55 @@ margin-top: 30vh;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
-    font-size: 4rem;
+
     cursor: pointer;
 
 }
 
-.fa-html5{
+.fa-html5 {
     color: #e34c26;
 }
 
-.fa-css3-alt{
+.fa-css3-alt {
     color: #264de4;
 }
 
-.fa-js{
-    color:#F0DB4F;
+.fa-js {
+    color: #F0DB4F;
 }
 
-.fa-fedora{
-    color:#0B57A4;
+.fa-fedora {
+    color: #0B57A4;
 }
 
-.fa-microsoft{
-    color:#00adef;
+.fa-microsoft {
+    color: #00adef;
 }
 
-.vs-logo{
-    height: 1em;
+.vs-logo {
+    height: 4em;
     width: auto;
 }
 
-.key-skills-lower{
+.key-skills-lower {
     position: relative;
     bottom: -150px;
 }
 
-.key-skills-text{
+.key-skills-text {
     display: none;
     text-align: justify;
-    width:300px;
+    width: 300px;
 }
 
-.education-article{
-    margin-top: 300px;
+.education-article {
+    margin-top: 200px;
 }
 
-.education-article-title{
-   
-}
+
+
+.education-article-title {}
+
 /*Contact Styling*/
 
 .contact-me-section {
@@ -281,7 +289,7 @@ margin-top: 30vh;
 .socials {
     display: flex;
     justify-content: space-around;
-    font-size: 4rem;
+
     color: #131213;
     transition: all 0.5s ease;
     cursor: pointer;
