@@ -225,7 +225,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 
 }
 
@@ -270,16 +270,14 @@ section {
     color: #00adef;
 }
 
-.fa-apple {
-    cursor: pointer;
-}
+
 
 .vs-logo {
     height: 6em;
     width: auto;
-    cursor: pointer;
 }
 
+/*End of Skills Styling*/
 
 /*Education Styling*/
 
@@ -288,25 +286,26 @@ section {
     margin-top: 20px;
 }
 
-.education-list{
+.education-list {
     line-height: 2rem;
 }
 
 
-.fa-file{
+.fa-file {
     font-size: 2rem;
 }
 
-.download-button{
+.download-button {
     margin: 40px auto 20px;
     text-align: center;
-    width:350px;
+    width: 350px;
     border: 1px solid #affc41;
     border-radius: 20px;
     padding: 7px;
+    cursor: pointer;
 }
 
-/*Skills Styling*/
+
 
 
 /*Contact Styling*/
