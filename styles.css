@@ -353,18 +353,15 @@ code{
 
 /*Contact Styling*/
 
-.contact-me-section{
-height: 20vh;
+.contact-me-section{ 
+min-height: 20vh;
+max-height: 35vh;
 }
 
 .socials {
+    margin: 20px 0;
     display: flex;
     justify-content: space-around;
-    color: #131213;
     transition: all 0.5s ease;
     cursor: pointer;
-}
-
-.socials:hover {
-    color: rgba(255, 255, 255, .75);
 }
