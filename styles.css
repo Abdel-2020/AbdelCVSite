@@ -200,7 +200,7 @@ code{
 /*About Me Section*/
 
 .about-me-img {
-    height: 300px;
+    height: 250px;
     width: auto;
     border-radius: 50%;
     
@@ -213,6 +213,17 @@ code{
 
 }
 
+.about-me-title{
+    margin: 5px 0;
+}
+.about-me-likes{
+    font-weight: lighter;
+}
+
+
+.about-me-likes{
+    margin: 5px 0;
+}
 
 .code-terminal{
     font-weight: bold;
@@ -342,17 +353,13 @@ code{
 
 /*Contact Styling*/
 
-.contact-me-section {
-    width: 100%;
-    text-align: center;
-    height: 20vh;
-
+.contact-me-section{
+height: 20vh;
 }
 
 .socials {
     display: flex;
     justify-content: space-around;
-
     color: #131213;
     transition: all 0.5s ease;
     cursor: pointer;
