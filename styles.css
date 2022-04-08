@@ -82,6 +82,13 @@ code{
 .section-title {
     margin-bottom: 100px;
 }
+
+.body-text {
+    width: 900px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
 /*burger menu*/
 
 
@@ -196,13 +203,16 @@ code{
     height: 300px;
     width: auto;
     border-radius: 50%;
+    
 }
 
 .about-me-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
 }
+
 
 .code-terminal{
     font-weight: bold;
@@ -271,13 +281,6 @@ code{
 }
 
 
-.body-text {
-    width: 900px;
-    line-height: 1.5em;
-    text-align: justify;
-
-}
-
 
 .fa-html5 {
     color: #e34c26;
@@ -324,7 +327,7 @@ code{
     font-size: 2rem;
 }
 
-.download-button {
+.button {
     margin: 40px auto 20px;
     text-align: center;
     width: 350px;
