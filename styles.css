@@ -83,11 +83,7 @@ code{
     margin-bottom: 100px;
 }
 
-.body-text {
-    width: 900px;
-    line-height: 1.5em;
-    text-align: justify;
-}
+
 
 /*burger menu*/
 
@@ -199,18 +195,18 @@ code{
 
 /*About Me Section*/
 
-.about-me-img {
-    height: 250px;
-    width: auto;
-    border-radius: 50%;
-    
-}
-
 .about-me-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
+}
+
+.about-me-img {
+    height: 250px;
+    width: auto;
+    border-radius: 50%;
+    
 }
 
 .about-me-title{
@@ -368,4 +364,179 @@ max-height: 35vh;
     justify-content: space-around;
     transition: all 0.5s ease;
     cursor: pointer;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .body-text {
+        width: 270px;
+        line-height: 1.5em;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+
+    section {
+        min-width:100vw;
+    }
+
+
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+
+    .key-skills-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    
+    .key-skills-logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 400px;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .body-text {
+        width: 400px;
+        line-height: 1.5em;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+
+    section {
+        min-width:100vw;
+    }
+
+
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+
+    .key-skills-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    
+    .key-skills-logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 400px;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .body-text {
+        width: 600px;
+        line-height: 1.5em;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+
+    section {
+        min-width:100vw;
+    }
+
+
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+
+    .key-skills-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    
+    .key-skills-logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 400px;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    section {
+        width:60vw;
+    }
+
+
+    .body-text {
+        width: 900px;
+        line-height: 1.5em;
+        text-align: justify;
+        margin:0;
+    }
+
+    .about-me-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+
+
+    .key-skills-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 2560px) {
+
+    section {
+ 
+        min-width:55vw;
+     }
+
+
+
+
 }
