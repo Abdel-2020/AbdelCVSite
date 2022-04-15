@@ -370,7 +370,7 @@ max-height: 35vh;
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .body-text {
-        width: 270px;
+        width: 340px;
         line-height: 1.5em;
         text-align: justify;
         margin: 0 auto;
@@ -390,6 +390,10 @@ max-height: 35vh;
     
     }
 
+    .about-me-likes{
+        margin-bottom: 60px;
+    }
+
     .key-skills-container {
         display: flex;
         flex-direction: column;
@@ -405,6 +409,17 @@ max-height: 35vh;
         width: 400px;
         margin: 0 auto;
     }
+
+    .socials {
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-around;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        font-size: 0.5em;
+    }
+
+
 
 }
 
@@ -446,6 +461,9 @@ max-height: 35vh;
         width: 400px;
         margin: 0 auto;
     }
+
+
+    
 
 
     
