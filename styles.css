@@ -520,10 +520,10 @@ max-height: 35vh;
 
 
     .body-text {
-        width: 900px;
+        width: 800px;
         line-height: 1.5em;
         text-align: justify;
-        margin:0;
+        margin:0 auto;
     }
 
     .about-me-container {
@@ -537,12 +537,28 @@ max-height: 35vh;
 
     .key-skills-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
 
     }
 
 
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .body-text {
+        width: 900px;
+        line-height: 1.5em;
+        text-align: justify;
+        margin:0 auto;
+    }
+    .key-skills-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
